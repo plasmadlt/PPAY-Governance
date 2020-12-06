@@ -1,0 +1,34 @@
+{
+  "name": "@ppay/governance",
+  "version": "1.0.0",
+  "description": "Plasma Alliance Governance",
+  "author": "Plasma Alliance",
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "precompile": "rimraf ./build/",
+    "compile": "waffle",
+    "pretest": "yarn compile",
+    "test": "mocha",
+    "lint": "prettier ./test/**/*.ts --check",
+    "prepublishOnly": "yarn test"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.1.0",
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.3",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^3.1.0",
+    "ethereumjs-util": "^7.0.4",
+    "mocha": "^8.1.3",
+    "prettier": "^2.1.1",
+    "rimraf": "^3.0.2",
+    "solc": "^0.6.12",
+    "truffle": "^5.1.41",
+    "truffle-flattener": "^1.4.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
