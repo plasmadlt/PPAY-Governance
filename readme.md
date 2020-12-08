@@ -1,5 +1,5 @@
 
-# Plasma Alliance Governance  
+# PPAY Governance  
 
 ## Ppay.Sol 
 Governance Token PPAY. 
